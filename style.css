@@ -1,0 +1,296 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5f1e8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+    background-color: #2d2d2d;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a452c;
+    padding: 15px 30px;
+    margin: 0 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #8b6942;
+    border-radius: 5px;
+    color: #f5f1e8;
+}
+
+nav a:active {
+    color: #ffd700;
+}
+
+/* ========== MAIN CONTENT ========== */
+main {
+    min-height: 60vh;
+    padding: 40px 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+main > p:first-child {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6a452c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main > p:nth-of-type(2) {
+    font-size: 18px;
+    color: #8b6942;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    color: #6a452c;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #d4a574;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #8b6942;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3, h4 {
+    color: #8b6942;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+strong {
+    color: #6a452c;
+    font-weight: bold;
+}
+
+/* ========== IMAGES ========== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== LISTS ========== */
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* ========== BUTTONS ========== */
+button {
+    background-color: #6a452c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #8b6942;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #5a3520;
+}
+
+/* ========== FORMS ========== */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #6a452c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #d4a574;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6a452c;
+    box-shadow: 0 0 5px rgba(106, 69, 44, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ========== SECTIONS ========== */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    main {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    main > p:first-child {
+        font-size: 28px;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 15px;
+        margin: 0 10px;
+    }
+    
+    nav img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    nav a {
+        padding: 6px 8px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    
+    main {
+        padding: 15px 10px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    form {
+        padding: 20px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
